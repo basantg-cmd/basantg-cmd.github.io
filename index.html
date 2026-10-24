@@ -136,6 +136,10 @@ hr.divider{border:none;border-top:0.5px solid var(--border);max-width:1180px;mar
 .geeta-label{font-size:12px;color:var(--ink-faint);text-transform:uppercase;letter-spacing:0.5px}
 .geeta-value{font-size:15px;font-weight:500;color:var(--ink)}
 .geeta-value a{color:var(--teal);text-decoration:none}
+.geeta-cover{display:inline-block;margin:0.5rem 0 2rem;border-radius:12px;overflow:hidden;border:1px solid var(--teal-border);box-shadow:0 4px 14px rgba(0,0,0,0.08);transition:transform .25s ease, box-shadow .25s ease}
+.geeta-cover img{display:block;width:100%;max-width:420px;height:auto;transition:transform .35s ease}
+.geeta-cover:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(15,110,86,0.25)}
+.geeta-cover:hover img{transform:scale(1.04)}
 
 /* FOOTER */
 footer{background:var(--ink);color:rgba(255,255,255,0.6);text-align:center;padding:2rem 6%;font-size:13px}
@@ -582,6 +586,9 @@ footer span{color:rgba(255,255,255,0.9);font-weight:500}
 <section id="geeta">
   <p class="section-label">Geeta</p>
   <h2 class="section-title">Geeta</h2>
+  <a href="geeta.pdf" class="geeta-cover" title="Open Geeta (PDF)">
+    <img src="CoverPageImage.jpg" alt="Geeta">
+  </a>
   <div class="geeta-grid">
     <div>
       <div class="geeta-item">
@@ -594,6 +601,7 @@ footer span{color:rgba(255,255,255,0.9);font-weight:500}
   </div>
 </section>
 
+ 
 <!-- CONTACT -->
 <section id="contact">
   <p class="section-label">Let's Connect</p>
